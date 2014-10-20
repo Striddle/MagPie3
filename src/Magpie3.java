@@ -45,6 +45,20 @@ public class Magpie3
 		{
 			response = "Tell me more about your family.";
 		}
+
+        else if (findKeyword(statement, "Sean") >=0 )
+        {
+            response = "I heard he doesn't even swim backstroke";
+        }
+
+        else if(findKeyword(statement, "Theo") >=0 )
+        {
+            response = "Grasian? More like Gaysain";
+        }
+        else if (findKeyword(statement, "fuck") >=0 )
+        {
+            response = "Please stop fucking cursing.";
+        }
 		else
 		{
 			response = getRandomResponse();
